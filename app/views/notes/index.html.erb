@@ -1,25 +1,31 @@
 <% content_for :head do %>
-<style type="text/css">
-
-</style>
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <% end %>
 <h1>Stickies</h1>
-<ul>
+
+
+<div class="notes"><ul >
 
     <% @notes.each do |note| %>
       
 
 
 <li class="note">
-<%= link_to(note) do %>
+<div class="note-box">
+	
+
   <h2 class="note-title wordwrap"><%= link_to note.title, note %></h2>
 <p class="note-content wordwrap"><%= note.description %></p>
 <%= link_to "", note, method: :delete, data: { confirm: 'Are you sure?' },class: 'boxclose' %>
-<%= link_to 'Edit', edit_note_path(note),:class=>"edit-note" %>
-<% end %>
+<%= link_to '', edit_note_path(note),:class=>"edit-note glyphicon glyphicon-edit" %>
+
+</div>
+
+
 </li>
     <% end %>
   </ul>
 <br/>
 <br/>
-<%= link_to 'New Note', new_note_path %>
+<%= link_to 'New Note', new_note_path, class: 'btn btn-info' %>
+</div>

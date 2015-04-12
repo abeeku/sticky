@@ -16,6 +16,9 @@
 #
 default: &default
   adapter: postgresql
+ # username: sticky
+#  password: password
+ 
   encoding: unicode
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
@@ -24,6 +27,7 @@ default: &default
 development:
   <<: *default
   database: sticky_development
+   host:localhost
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
