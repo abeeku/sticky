@@ -1,0 +1,105 @@
+// Place all the styles related to the notes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family:arial,sans-serif;
+  font-size:100%;
+  margin:3em;
+  background:#666;
+  color:#fff;
+}
+.note-content{
+  font-size:100%;
+  font-weight:normal;
+}
+ul,li{
+  list-style:none;
+}
+ul{
+  overflow:hidden;
+  padding:3em;
+}
+ul li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+}
+ul li{
+  margin:1em;
+  float:left;
+}
+/*
+.note {
+	margin:none;
+	border: 1px solid gray;
+	width: 150px;
+	height: 150px;
+	position:relative;
+	display: inline-block;
+	padding: 10px;
+	margin-left:20px;
+	background-color: rgba(255, 255, 87, 0.89);
+	-moz-box-shadow: 4px 4px 4px #ccc;
+    -webkit-box-shadow: 4px 4px 4px #ccc;
+    box-shadow: 4px 4px 4px #ccc;
+}
+
+.wordwrap { 
+   white-space: pre-wrap;         
+   white-space: -moz-pre-wrap;     
+   white-space: -pre-wrap;        
+   white-space: -o-pre-wrap;       
+   word-wrap: break-word;      
+}
+.note-content {
+	margin:0;
+	margin-top:5px;
+}
+.note-title {
+	margin:0;
+}
+.note-title a {
+	text-decoration: none;
+	color:black;
+	margin:0;
+
+}
+*/
+a:hover {
+	text-decoration: none;
+}
+
+
+/*
+  a.boxclose{
+   position:absolute;
+    top:0;
+    right:0;
+    cursor:pointer;
+    color: #fff !important;
+    border: 1px solid #AEAEAE;
+   
+    background: rgba(210, 5, 5, 0.79);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 11px 3px;       
+}
+
+.boxclose:before {
+    content: "×";
+
+}
+*/
